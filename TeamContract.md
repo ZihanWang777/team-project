@@ -45,4 +45,4 @@ course and may be revised with the agreement of all team members.
 
 Team Member Signatures:
 
-Helia Javidrad Arad Fathalian
+Helia Javidrad Arad Fathalian Jiayi Sun
