@@ -118,6 +118,44 @@ the diagram
 - The user has specified which element is to be edited or deleted
 - The user has made valid changes to the relevant attributes (if editing)
 
+**Trigger:** The user clicks the edit icon next to an element.
+
+**Success Outcome:** The pre-existing element is replaced (or altered) with the modified
+one, or the pre-existing element is deleted from the list.
+
+**Main Success Scenario:**
+1. The user clicks the "edit" button next to an Element
+2. The user modifies the required Element attributes and confirms
+3. The modified field (or Element object) is passed to the Interactor
+4. The Element is updated in the internal entity-list, and Use Case 2 is called
+
+**Extensions:**
+- 2a. The user cancels their changes
+  1. The dialogue window asking for changes closes
+  2. No changes are made to the Entity list or diagram
+- 3a. The user inputs invalid values for the edit
+  1. This should be handled like in Use Case 1 for consistency
+
+### Use Case 4 (Saving The Diagram)
+**Use Case:** The User selects how to save their diagram. We implement the options of
+saving the diagram preview, copying the code, saving the code to a file, or saving the code
+to an Overleaf project file.
+
+**Preconditions:**
+- The diagram is non-empty (this may not be needed but saving an empty diagram doesn't
+make much sense)
+
+**Trigger:** The user selects a method for saving the code via a menu that appears after
+clicking `File > Save` or `Ctrl+S`.
+
+**Success Outcome:** The user selects a save method, possibly inputs a file path, and the
+file saves to its intended destination.
+
+**Main Success Scenario:**
+1. The user selects a method to save their created content
+2. The user inputs a file path or project and destination depending on chosen method
+3. The image/file is copied from the cache into its intended destination
+
 ---
 ## Minimal Viable Product (MVP)
 | Team Member | MVP Use Case |
