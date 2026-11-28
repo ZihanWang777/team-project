@@ -12,7 +12,7 @@ public class StraightShapeEntity extends TargetEntity{
     private ArrayList<CoordinatePair> edges;
     private Style style;
 
-    public StraightShapeEntity(String name, Boolean solid, String color, ArrayList<CoordinatePair> cps) {
+    public StraightShapeEntity(String name, String solid, String color, ArrayList<CoordinatePair> cps) {
         super(name, solid, color);
         if (isShapeLegal(cps)) {
             this.edges = cps;

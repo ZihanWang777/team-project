@@ -22,7 +22,7 @@ public class FunctionEntity extends TargetEntity{
     private static final Set<String> FUNCTIONS = Set.of("sin", "cos", "tan", "csc", "sec", "cot", "arcsin",
     "arccos", "arctan", "arccsc", "arcsec", "arccot", "sqrt", "ln", "log", "abs");
 
-    public FunctionEntity(String name, boolean solid, String color, String function) {
+    public FunctionEntity(String name, String solid, String color, String function) {
         super(name, solid, color);
         if (isFunctionLegal(function)) {
             this.function = function;

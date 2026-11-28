@@ -7,7 +7,7 @@ public class CurveShapeEntity extends TargetEntity{
     private double yRadius;
     private double degree;
 
-    public CurveShapeEntity(String name, boolean solid, String color,
+    public CurveShapeEntity(String name, String solid, String color,
                             CoordinatePair ori, double xRadius, double yRadius, double degree) {
         super(name, solid, color);
         this.origin = ori;

@@ -7,7 +7,7 @@ package entity;
 public abstract class TargetEntity {
     private Style style;
 
-    public TargetEntity(String name, boolean solid, String color) {
+    public TargetEntity(String name, String solid, String color) {
         this.style = new Style(name, solid, color);
     }
 
